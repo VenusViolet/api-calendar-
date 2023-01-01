@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="p-5 mb-4 text-center header">
-      <h1>Project Tracker</h1>
+      <h1>Your Schedule!</h1>
       <h2>
         Current Time &amp; Date: <br />
         <span id="time-display"></span>
@@ -33,14 +33,13 @@
             <h2 class="h4 card-header custom-card-header">Instructions</h2>
             <div class="card-body">
               <p class="card-text">
-                Click the button below to open a form and provide information
-                for the following:
+                Click the button below to add information for your new event that you are adding:
               </p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Project Name</li>
-              <li class="list-group-item">Project Type</li>
-              <li class="list-group-item">Due Date</li>
+              <li class="list-group-item">Event Name</li>
+              <li class="list-group-item">Event Type</li>
+              <li class="list-group-item">Due Date for Event</li>
             </ul>
             <div class="card-footer">
               <button
@@ -48,11 +47,12 @@
                 data-bs-toggle="modal"
                 data-bs-target="#new-project-modal"
               >
-                Add Project
+                Add Event
               </button>
             </div>
           </div>
         </div>
+        
 
         <div class="col-md col-xl-8">
           <!-- Project Table -->
@@ -67,19 +67,19 @@
             </thead>
             <tbody id="project-display">
               <tr>
-                <td>Project tracker</td>
+                <td>Event tracker</td>
                 <td>Web Application (Front End)</td>
                 <td>06/30/2022</td>
                 <td><button class="btn btn-sm">X</button></td>
               </tr>
               <tr class="project-late">
-                <td>Project tracker</td>
+                <td>Event tracker</td>
                 <td>Web Application (Front End)</td>
                 <td>06/30/2022</td>
                 <td><button class="btn btn-sm">X</button></td>
               </tr>
               <tr class="project-today">
-                <td>Project tracker</td>
+                <td>Event tracker</td>
                 <td>Web Application (Front End)</td>
                 <td>06/30/2022</td>
                 <td><button class="btn btn-sm">X</button></td>
@@ -103,7 +103,7 @@
           <form id="project-form">
             <div class="modal-header custom-modal-header">
               <h5 class="modal-title" id="new-project-modal-label">
-                Add a new project
+                Add a new event
               </h5>
               <button
                 type="button"
@@ -114,18 +114,18 @@
             </div>
             <div class="modal-body">
               <div class="mb-3">
-                <label for="project-name-input">Project Name</label>
+                <label for="project-name-input">Event Name</label>
                 <input
                   type="text"
                   id="project-name-input"
                   class="form-control"
-                  placeholder="Enter the project's name"
+                  placeholder="Enter the event's name"
                   required
                 />
               </div>
               <div class="mb-3">
                 <label for="project-type-input" class="form-label"
-                  >Project Type</label
+                  >Event Type</label
                 >
                 <select id="project-type-input" class="form-select">
                   <option value="Web Application (Front End)">
@@ -145,7 +145,7 @@
                 </select>
               </div>
               <div class="mb-3">
-                <label for="project-date-input">Due Date</label>
+                <label for="project-date-input">Due Date for Event</label>
                 <input
                   type="date"
                   id="project-date-input"
@@ -171,7 +171,7 @@
                 class="btn btn-custom"
                 data-bs-dismiss="modal"
               >
-                Add Project
+                Add Event
               </button>
             </div>
           </form>
