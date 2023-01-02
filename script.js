@@ -6,3 +6,11 @@ let finalHour = "";
 let timeMap = new Map();
 
 $('#currentDay').text(currentDate);
+
+if (localStorage.getItem("mymap")) {
+    timeMap = new Map(JSON.parse(localStorage.mymap));
+} else {
+    let timeMap = new Map();
+}
+
+
