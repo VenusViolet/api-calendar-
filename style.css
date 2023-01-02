@@ -71,4 +71,23 @@
     width: 7%;
     font-size: 24px;
   }
-  
+
+  .saveBtn i:hover {
+    font-size: 50px;
+    transiton: all .3s ease-in-out;
+  }
+
+  #currentDay {
+    font-size: 45px;
+  }
+
+  .time-div {
+    background-color: white;
+    color: black;
+    border: 3px solid gray;
+    border-left: none;
+  }
+
+  i {
+    font-size: 24px;
+  }
