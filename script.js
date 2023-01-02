@@ -1,3 +1,58 @@
+timeDiv.text(finalHour + amPM);
+    timeDiv.addClass('time-div');
+
+    // 2nd column: events (big/wide)
+    let descriptionDiv = $("<div>");
+    let textAreaForDiv = $("<textarea>");
+    textAreaForDiv.attr('id', 'textarea' + hour);
+
+    descriptionDiv.append(textAreaForDiv);
+    descriptionDiv.addClass("description");
+    descriptionDiv.css("width", "80%");
+   
+
+
+    // creates floppy disk icon for save button
+    let saveIcon = $('<i>');
+    saveIcon.addClass("fa fa-save");
+
+    // 3rd column: save button 
+    let saveDiv = $("<div>");
+    saveDiv.addClass("saveBtn ");
+    saveDiv.attr('id', hour);
+ 
+
+    // add icon to save button
+    saveDiv.append(saveIcon);
+
+    // append all three individual blocks to the bigger div
+    timeBlock.append(timeDiv, descriptionDiv, saveDiv);
+
+    timeBlock.addClass("time-block row");
+
+    if (currentHour > hour) {
+
+        // if the hour has passed, make the background grey
+        timeBlock.addClass("past");
+
+    } else if (currentHour < hour) {
+
+        // if the hour happens in the future, make the background green
+        timeBlock.addClass("future");
+        textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
+
+    } else {
+
+        // make the background red
+        timeBlock.addClass("present");
+        textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
+    }
+
+    // add completed time block to the main container 
+    $("#main-contain").append(timeBlock);
+
+
+
 // save reference to important DOM elements
 var timeDisplayEl = $('#time-display');
 var projectDisplayEl = $('#project-display');
@@ -122,3 +177,4 @@ displayTime();
 setInterval(displayTime, 1000);
 
 printProjectData();
+
