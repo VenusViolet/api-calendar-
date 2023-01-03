@@ -1,7 +1,7 @@
 # Module 5
 
 ## Description 
-
+Sometimes it can be very difficult to keep track of your daily agenda. This calendar can be very helpful and keep you on track. It is color coded to help identigy past, present, and future tasks. Everything is also stored into your local storage, even when the webpage is deleted. 
 
 ## Table of Contents
 1. Description
@@ -15,11 +15,13 @@
 To access the webpage, you can visit the deployed webpage URL or follow the link of the Github repository. 
 
 ## Usage
-This accessible quiz can be used to practice beginner web page designing with JavaScript. Specifically, how to use buttons, timers, and run event listeners. 
-<img width="1440" alt="Screenshot 2022-11-17 at 10 49 46 AM" src="https://user-images.githubusercontent.com/115984242/202557219-6b103f68-78bc-4701-b2f1-3fedf699216a.png">
-Link to deployed website: file:///Users/venusrodin/api-quiz/index.html 
+This personal calendar can be used to schedult your daily plans right down to the hour. It is very clear with the hours laid out and is also color coded!
+<img width="1440" alt="Screenshot 2022-11-17 at 10 49 46 AM" src=<img width="1440" alt="Screenshot 2023-01-02 at 6 09 40 PM" src="https://user-images.githubusercontent.com/115984242/210299163-dd93f498-b895-4f40-a18a-e4c8625d2afd.png">
+
+Link to deployed website: 
 
 ## Credits 
+My boss Dante Orpilla helped by going through my code alongside me and double checking it. 
 
 
 ## Licence 
