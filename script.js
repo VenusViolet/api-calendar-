@@ -31,3 +31,14 @@ for (let hour = 9; hour < 18; hour++) {
         finalHour = " " + finalHour;
     }
 }
+
+timeDiv.text(finalHour + amPM);
+timeDiv.addClass('time-div');
+
+let descriptionDiv = $("<div>");
+let textAreaForDiv = $("<textarea>");
+textAreaForDiv.attr('id', 'textarea' + hour);
+
+descriptionDiv.append(textAreaForDiv);
+descriptionDiv.addClass("description");
+descriptionDiv.css("width", "80%");
