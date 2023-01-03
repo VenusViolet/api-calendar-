@@ -30,7 +30,7 @@ for (let hour = 9; hour < 18; hour++) {
     if (finalHour < 10) {
         finalHour = " " + finalHour;
     }
-    
+
 
 timeDiv.text(finalHour + amPM);
 timeDiv.addClass('time-div');
@@ -69,3 +69,8 @@ if (currentHour > hour) {
 $("#main-contain").append(timeBlock);
 
 }
+
+timeMap.forEach(function (text, key) {
+    let textAreaVar = "#textarea" + key;
+    document.querySelector(textAreaVar).vale = text;
+});
