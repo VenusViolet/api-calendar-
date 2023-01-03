@@ -1,7 +1,7 @@
 # Module 5
 
 ## Description 
-Sometimes it can be very difficult to keep track of your daily agenda. This calendar can be very helpful and keep you on track. It is color coded to help identigy past, present, and future tasks. Everything is also stored into your local storage, even when the webpage is deleted. 
+Sometimes it can be very difficult to keep track of your daily agenda. This calendar can be very helpful and keep you on track. It is color coded to help identify past, present, and future tasks. Everything is also stored into your local storage, even when the webpage is deleted. 
 
 ## Table of Contents
 1. Description
@@ -21,7 +21,7 @@ This personal calendar can be used to schedult your daily plans right down to th
 Link to deployed website: 
 
 ## Credits 
-My boss Dante Orpilla helped by going through my code alongside me and double checking it. 
+My boss Dante Orpilla helped by going through my code alongside me and double checking it. Elijah Ching also collaborated with the Java Script file. 
 
 
 ## Licence 
