@@ -74,3 +74,12 @@ timeMap.forEach(function (text, key) {
     let textAreaVar = "#textarea" + key;
     document.querySelector(textAreaVar).vale = text;
 });
+
+$(".saveBtn").on('click', function () {
+    let textareaVar = "#textarea" + (this.id);
+
+    timeMap.set((this.id), document.querySelector(textAreaVar).value);
+
+    localStorage.mymap = JSON.stringify(Array.from(timeMap.entries()));
+
+});
