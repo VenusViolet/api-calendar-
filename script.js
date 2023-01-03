@@ -42,3 +42,14 @@ textAreaForDiv.attr('id', 'textarea' + hour);
 descriptionDiv.append(textAreaForDiv);
 descriptionDiv.addClass("description");
 descriptionDiv.css("width", "80%");
+
+let saveIcon = $('<i>');
+saveIcon.addClass("fa fa-save");
+
+let saveDiv = $("<div>");
+saveDiv.addClass("saveBtn ");
+saveDiv.attr('id', hour);
+
+saveDiv.append(saveIcon);
+
+timeBlock.append(timeDiv, descriptionDiv, saveDiv);
