@@ -13,4 +13,21 @@ if (localStorage.getItem("mymap")) {
     let timeMap = new Map();
 }
 
+for (let hour = 9; hour < 18; hour++) {
+    let timeBlock = $('<div>');
+    if (hour < 12) {
+        amPM = "AM";
+    } else {
+        amPM = "PM";
+    }
+    let timeDiv = $('<div>');
+    if (hour > 12) {
+        finalHour = hour - 12; 
+    } else {
+        finalHour = hour;
+    }
 
+    if (finalHour < 10) {
+        finalHour = " " + finalHour;
+    }
+}
