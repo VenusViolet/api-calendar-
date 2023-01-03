@@ -30,7 +30,7 @@ for (let hour = 9; hour < 18; hour++) {
     if (finalHour < 10) {
         finalHour = " " + finalHour;
     }
-}
+    
 
 timeDiv.text(finalHour + amPM);
 timeDiv.addClass('time-div');
@@ -53,3 +53,19 @@ saveDiv.attr('id', hour);
 saveDiv.append(saveIcon);
 
 timeBlock.append(timeDiv, descriptionDiv, saveDiv);
+
+timeBlock.addClass("time-block row");
+
+if (currentHour > hour) {
+    timeBlock.addClass("past");
+} else if (currentHour < hour) {
+    timeMap.addClass("future");
+    textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
+} else {
+    timeBlock.addClass("present");
+    textAreaForDiv.attr("placeholder", "Enter a task to complete this hour...");
+}
+
+$("#main-contain").append(timeBlock);
+
+}
